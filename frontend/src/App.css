@@ -1,0 +1,36 @@
+/* Global CSS rules to ensure text colors remain visible and aren't overwritten by Bootstrap defaults */
+
+body, p, span, div {
+  color: var(--text-on-surface);
+}
+
+.text-muted {
+  color: var(--text-on-surface-variant) !important;
+}
+
+.text-white {
+  color: var(--text-on-surface) !important; /* Ensure "white" matches our specific off-white token */
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-success {
+  color: #7bd0ff !important; /* Tertiary from design spec, but mapped to success for this theme */
+}
+
+/* Ensure headings retain their specific color */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: var(--text-on-surface) !important;
+}
+
+/* Base link colors */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary_container);
+}

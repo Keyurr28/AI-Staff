@@ -1,0 +1,57 @@
+.custom-card {
+  background-color: var(--color-surface_container);
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 24px rgba(6, 14, 32, 0.15);
+}
+
+.stat-label {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: var(--text-on-surface-variant);
+}
+
+.bg-secondary-container {
+  background-color: var(--color-secondary_container);
+}
+
+.text-on-secondary-container {
+  color: var(--color-on_secondary_container);
+}
+
+.stat-card-primary {
+  background: linear-gradient(135deg, var(--color-primary_fixed_dim), var(--color-primary_container));
+}
+
+.text-on-primary-container {
+  color: var(--color-on_primary_container);
+}
+
+.bg-surface-lowest {
+  background-color: var(--color-surface_lowest);
+}
+
+.bg-surface-container-highest {
+  background-color: var(--color-surface_container_highest);
+}
+
+.border-ghost {
+  border-color: var(--border-ghost) !important;
+}
+
+.bg-error-container {
+  background-color: rgba(255, 180, 171, 0.1);
+}
+
+.text-error {
+  color: var(--color-error);
+}
+
+
+.chart-placeholder {
+  min-height: 250px;
+}

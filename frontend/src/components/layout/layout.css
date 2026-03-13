@@ -1,0 +1,97 @@
+/* Command Navigator Sidebar Styles */
+.dashboard-layout {
+  background-color: var(--color-background);
+}
+
+.desktop-sidebar {
+  width: 260px;
+  background-color: var(--color-surface_container_low);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-sidebar {
+  background-color: var(--color-surface_container_low);
+  width: 280px !important;
+}
+
+.mobile-sidebar .offcanvas-header {
+  border-bottom: none;
+}
+
+.logo-section .logo-icon {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-primary_container);
+}
+
+.nav-links .nav-item {
+  color: var(--text-on-surface-variant);
+  transition: all 0.2s ease;
+}
+
+.nav-links .nav-item:hover {
+  background-color: var(--color-surface_container_highest);
+  color: var(--text-on-surface);
+}
+
+.nav-links .nav-item.active {
+  background-color: var(--color-primary_container);
+  color: var(--color-on_primary_container);
+}
+
+.nav-links .nav-icon {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile {
+  background-color: var(--color-surface_container);
+}
+
+.user-profile .avatar {
+  background-color: #f7a072; /* Subtle accent from the image */
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  font-family: var(--font-display);
+}
+
+/* Topbar Styles */
+.topbar {
+  background-color: transparent;
+  min-height: 72px;
+}
+
+.search-form {
+  min-width: 320px;
+}
+
+.search-input, .search-icon-bg {
+  background-color: var(--color-surface_container_low);
+  color: var(--text-on-surface);
+}
+
+.search-input:focus {
+  background-color: var(--color-surface_container_low);
+  color: var(--text-on-surface);
+  box-shadow: none;
+  border-color: var(--color-primary);
+}
+
+.search-input::placeholder {
+  color: var(--text-on-surface-variant);
+}
+
+.action-btn:hover {
+  color: var(--text-on-surface) !important;
+}
+
+/* Fix Bootstrap focus ring on Offcanvas close button for dark mode */
+.btn-close-white:focus {
+  box-shadow: 0 0 0 0.25rem rgba(181, 196, 255, 0.25);
+}
+
+.content-container {
+  flex-grow: 1;
+}
