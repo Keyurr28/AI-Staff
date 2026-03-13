@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AI Staff</title>
+    <script type="text/javascript">
+        // This script takes the current URL path and redirects it to the hash-based equivalent
+        // Example: /AI-Staff/dashboard -> /AI-Staff/#/dashboard
+        var segmentCount = 1; // Number of segments in the base URL (e.g., 1 for /AI-Staff/)
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/#' +
+            l.pathname.slice(1).split('/').slice(segmentCount).join('/') +
+            l.search + l.hash
+        );
+    </script>
+</head>
+<body>
+    Redirecting to AI Staff...
+</body>
+</html>
