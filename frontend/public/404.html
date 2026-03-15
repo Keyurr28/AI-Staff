@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Staff</title>
+    <script type="text/javascript">
+        // This script redirects any 404 path to the HashRouter equivalent.
+        // Example: /AI-Staff/dashboard -> /AI-Staff/#/dashboard
+        var segmentCount = 1; // 1 for base path /AI-Staff/
+        var l = window.location;
+        var basePath = l.pathname.split('/').slice(0, 1 + segmentCount).join('/');
+        var subPath = '/' + l.pathname.split('/').slice(1 + segmentCount).join('/');
+        // If subPath is just '/', redirect to root (which will auto-navigate to /dashboard)
+        var hashPath = (subPath === '/' || subPath === '') ? '' : subPath;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            basePath + '/#' + hashPath + l.search
+        );
+    </script>
+</head>
+<body>
+    Redirecting to AI Staff...
+</body>
+</html>
